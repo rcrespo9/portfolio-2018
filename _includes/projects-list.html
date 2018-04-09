@@ -1,0 +1,20 @@
+<ul>
+  {% for project in site.data.projects %}
+    <li>
+      <article>
+        <header>
+          <h3>{{ project.name}}</h3>
+          <p>{{ project.description }}</p>
+        </header>
+        <dl>
+          <dt>Year</dt>
+          <dd>{{ project.year }}</dd>
+          <dt>Role</dt>
+          <dd>{{ project.role }}</dd>
+          <dt>Context</dt>
+          <dd>{{ project.context }}</dd>
+        </dl>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
