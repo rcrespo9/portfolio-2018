@@ -2,12 +2,17 @@
 
 @import "lib/bourbon/bourbon";
 
-@import "base/normalize";
-@import "base/base";
-
 @import "variables/colors";
 @import "variables/typography";
 
+@import "helpers/mixins";
+
+@import "base/normalize";
+@import "base/base";
+
 @import "layouts/layouts";
 
+@import "objects/typography";
+
 @import "components/site-container";
+@import "components/page-section";

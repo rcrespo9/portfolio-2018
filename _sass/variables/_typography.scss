@@ -2,3 +2,14 @@ $bourbon: (
   "modular-scale-base": 1em,
   "modular-scale-ratio": $perfect-fourth
 );
+
+$serif-font: 'maiola', Georgia, Times, serif;
+$sans-serif-font: "prenton", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$font-weight: (
+  regular: 400,
+  book: 500,
+  bold: 700
+)
+
+

@@ -1,0 +1,26 @@
+.c-page-section {
+  &:not(:last-child) {
+    margin-bottom: modular-scale(7);
+  }
+}
+
+  .c-page-section__title,
+  .c-page-section__title--large {
+    @include section-title;
+  }
+
+  .c-page-section__title {
+    margin-bottom: modular-scale(2, 1rem);
+    font-size: modular-scale(5);
+  }
+
+  .c-page-section__title--large {
+    margin-bottom: modular-scale(3, 1rem);
+    font-size: modular-scale(6);
+  }
+
+  .c-page-section__blurb {
+    margin: 0;
+    font-size: modular-scale(2);
+    line-height: strip-unit( modular-scale(1) );
+  }
