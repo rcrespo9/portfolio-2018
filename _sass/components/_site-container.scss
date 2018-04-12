@@ -1,4 +1,5 @@
 .c-site-container {
-  max-width: modular-scale(14, 1rem);
+  max-width: content-sizing(14);
   margin: 0 auto;
+  padding-top: content-sizing(7);
 }

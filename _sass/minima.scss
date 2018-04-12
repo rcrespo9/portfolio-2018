@@ -6,6 +6,7 @@
 @import "variables/typography";
 
 @import "helpers/mixins";
+@import "helpers/functions";
 
 @import "base/normalize";
 @import "base/base";
@@ -16,3 +17,4 @@
 
 @import "components/site-container";
 @import "components/page-section";
+@import "components/projects";
