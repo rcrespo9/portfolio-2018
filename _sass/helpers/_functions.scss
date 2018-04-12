@@ -1,3 +1,3 @@
-@function content-sizing($value) {
+@function content-modular-scale($value) {
   @return modular-scale($value, 1rem);
 }

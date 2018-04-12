@@ -21,3 +21,14 @@ p,
 ul {
   margin: 0;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  box-shadow: inset 0px modular-scale(-2, -1em) 0px 0px rgba($lt-blue, 0.75);
+  transition: background-color .25s ease-in-out;
+
+  &:hover {
+    background-color: rgba($lt-blue, 0.75);
+  }
+}

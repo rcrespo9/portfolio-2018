@@ -1,6 +1,6 @@
 .c-page-section {
   &:not(:last-child) {
-    margin-bottom: content-sizing(7);
+    margin-bottom: content-modular-scale(7);
   }
 }
 
@@ -20,7 +20,7 @@
   .c-page-section__content {
     display: grid;
     grid-template-columns: minmax(9%, modular-scale(5)) 1fr;
-    grid-column-gap: content-sizing(4);
+    grid-column-gap: content-modular-scale(4);
   }
 
     .c-page-section__line {
@@ -33,7 +33,6 @@
     }
 
     .c-page-section__blurb {
-      max-width: modular-scale(13);
       margin-bottom: 0;
       font-size: modular-scale(2);
       line-height: strip-unit( modular-scale(1) );
