@@ -5,6 +5,7 @@ html {
   font-size: 18px;
   line-height: strip-unit( modular-scale(1));
   text-rendering: optimizeLegibility;
+  font-feature-settings: "pnum";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
