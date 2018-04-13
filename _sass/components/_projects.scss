@@ -1,0 +1,41 @@
+.c-projects {
+  display: grid;
+  grid-template-columns: repeat(2, 5 / 12 * 100%);
+  grid-column-gap: 2 / 12 * 100%;
+  grid-row-gap: modular-scale(4);
+}
+
+  .c-project__header:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: $lt-gray;
+    margin: content-modular-scale(1) 0;
+  }
+
+    .c-project__title {
+      margin-bottom: modular-scale(-4);
+      color: $black;
+      font-size: modular-scale(3);
+      font-weight: map-get($font-weight, bold);
+    }
+
+    .c-project__description {
+      font-size: modular-scale(1);
+      line-height: strip-unit( modular-scale(1));
+    }
+
+  .c-project__attributes {
+    display: flex;
+    justify-content: space-between;
+    font-family: $sans-serif-font;
+
+      .attribute__name {
+        margin-bottom: modular-scale(-5);
+      }
+
+      .attribute__val {
+        color: $black;
+      }
+  }

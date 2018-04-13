@@ -4,3 +4,10 @@
   year: 2017
   role: Design, Development
   context: Freelance
+
+- name: Where Are You?
+  url: http://rudycrespo.com/where-are-you/
+  description: Detects what country you're in, and zooms in on it on a map
+  year: 2017
+  role: Design, Development
+  context: Personal
