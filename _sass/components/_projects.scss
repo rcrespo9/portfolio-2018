@@ -29,7 +29,11 @@
   .c-project__attributes {
     display: flex;
     justify-content: space-between;
-    font-family: $sans-serif-font;
+    
+    .attribute__name,
+    .attribute__val {
+      @include small-text;
+    }
 
       .attribute__name {
         margin-bottom: modular-scale(-5);

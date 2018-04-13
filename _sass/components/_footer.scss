@@ -1,0 +1,19 @@
+.c-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  padding: content-modular-scale(2) 0;
+  border-top: 1px solid $lt-gray;
+}
+
+  .c-footer__copy,
+  .c-footer__link-item {
+    @include small-text;
+  }
+
+  .c-footer__link-item {
+    display: inline-block;
+    
+    &:not(:first-child) {
+      margin-left: modular-scale(1);
+    }
+  }

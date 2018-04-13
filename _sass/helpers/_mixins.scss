@@ -4,3 +4,8 @@
   font-weight: map-get($font-weight, book);
   line-height: 1;
 }
+
+@mixin small-text {
+  font-family: $sans-serif-font;
+  font-size: modular-scale(0);
+}
