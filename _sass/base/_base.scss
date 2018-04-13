@@ -3,6 +3,7 @@ html {
   color: $md-gray;
   font-family: $serif-font;
   font-size: 18px;
+  line-height: strip-unit( modular-scale(1));
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -22,6 +23,12 @@ ul,
 dl,
 dd {
   margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
 }
 
 ul {

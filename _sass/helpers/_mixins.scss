@@ -2,7 +2,6 @@
   margin-bottom: modular-scale(-2);
   color: $navy-blue;
   font-weight: map-get($font-weight, book);
-  line-height: 1;
 }
 
 @mixin small-text {

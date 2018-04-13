@@ -23,7 +23,6 @@
 
     .c-project__description {
       font-size: modular-scale(1);
-      line-height: strip-unit( modular-scale(1));
     }
 
   .c-project__attributes {
@@ -36,7 +35,7 @@
     }
 
       .attribute__name {
-        margin-bottom: modular-scale(-5);
+        margin-bottom: modular-scale(-8);
       }
 
       .attribute__val {
