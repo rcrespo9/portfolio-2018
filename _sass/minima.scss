@@ -4,12 +4,14 @@
 
 @import "variables/colors";
 @import "variables/typography";
+@import "variables/layout";
 
 @import "helpers/mixins";
 @import "helpers/functions";
 
 @import "base/normalize";
 @import "base/base";
+@import "base/typography";
 
 @import "layouts/layouts";
 
