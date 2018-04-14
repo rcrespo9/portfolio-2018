@@ -33,6 +33,9 @@
     }
 
     .c-page-section__blurb {
-      font-size: modular-scale(2);
+      .blurb__text {
+        font-size: modular-scale(2);
+        max-width: modular-scale(11);
+      }
     }
 
