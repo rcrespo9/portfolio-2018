@@ -19,17 +19,25 @@
 
   .c-page-section__content {
     display: grid;
-    grid-template-columns: minmax(9%, modular-scale(5)) 1fr;
-    grid-column-gap: content-modular-scale(4);
+    grid-template-columns: 1fr;
+
+    @include media-query($sm-screen) {
+      grid-template-columns: minmax(9%, modular-scale(5)) 1fr;
+      grid-column-gap: content-modular-scale(4);
+    }
   }
 
     .c-page-section__line {
       position: relative;
-      display: inline-block;
+      display: none;
       width: inherit;
       top: modular-scale(-1);
       height: 4px;
       background-color: $lt-gray;
+
+      @include media-query($sm-screen) {
+        display: inline-block;
+      }
     }
 
     .c-page-section__blurb {
@@ -38,4 +46,3 @@
         max-width: modular-scale(11);
       }
     }
-

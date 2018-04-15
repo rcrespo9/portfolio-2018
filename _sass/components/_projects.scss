@@ -1,8 +1,12 @@
 .c-projects {
   display: grid;
-  grid-template-columns: repeat(2, 5 / 12 * 100%);
-  grid-column-gap: 2 / 12 * 100%;
+  grid-template-columns: span / 12;
   grid-row-gap: modular-scale(4);
+
+  @include media-query($sm-screen) {
+    grid-template-columns: repeat(2, 5 / 12 * 100%);
+    grid-column-gap: 2 / 12 * 100%;
+  }
 }
 
   .c-project__header:after {
