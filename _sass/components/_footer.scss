@@ -1,8 +1,11 @@
 .c-footer__inner {
-  display: flex;
-  justify-content: space-between;
   padding: content-modular-scale(2) 0;
   border-top: 1px solid $lt-gray;
+
+  @include media-query($sm-screen) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
   .c-footer__copy,
@@ -10,10 +13,32 @@
     @include small-text;
   }
 
-  .c-footer__link-item {
-    display: inline-block;
-    
-    &:not(:first-child) {
-      margin-left: modular-scale(1);
+  .c-footer__copy {
+    display: block;
+    margin-bottom: modular-scale(-2);
+
+    @include media-query($sm-screen) {
+      display: initial;
+      margin-bottom: 0;
     }
   }
+
+  .c-footer__links {
+    display: flex;
+    justify-content: space-between;
+
+    @include media-query($sm-screen) {
+      display: initial;
+      justify-content: initial;
+    }
+  }
+
+    .c-footer__link-item {
+      @include media-query($sm-screen) {
+        display: inline-block;
+
+        &:not(:first-child) {
+          margin-left: modular-scale(1);
+        }
+      }
+    }

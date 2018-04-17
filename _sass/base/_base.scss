@@ -2,14 +2,18 @@ html {
   box-sizing: border-box;
   color: $md-gray;
   font-family: $serif-font;
-  font-size: 16px;
+  font-size: 14px;
   line-height: strip-unit( modular-scale(1) );
   text-rendering: optimizeLegibility;
   font-feature-settings: "pnum";
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 
-  @include media-query($sm-screen) {
+  @include media-query($md-screen) {
+    font-size: 16px;
+  }
+
+  @include media-query($lg-screen) {
     font-size: 18px;
   }
 }

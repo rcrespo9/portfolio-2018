@@ -1,11 +1,13 @@
 <section class="c-page-section">
   <div class="l-wrap">
-    <h2 class="c-page-section__title">Selected Projects</h2>
+    <div class="c-page-section__inner">
+      <h2 class="c-page-section__title">Selected Projects</h2>
+    </div>
 
     <ul class="c-projects">
       {% for project in site.data.projects %}
         <li class="c-project">
-          <article>
+          <article class="c-project__inner">
             <header class="c-project__header">
               <h3 class="c-project__title">
                 <a href="{{ project.url }}" target="_blank">{{ project.name}}</a>

@@ -4,6 +4,10 @@
   padding-top: content-modular-scale(7);
 
   main {
-    margin-bottom: content-modular-scale(8);
+    margin-bottom: content-modular-scale(7);
+
+    @include media-query($sm-screen) {
+      margin-bottom: content-modular-scale(8);
+    }
   }
 }

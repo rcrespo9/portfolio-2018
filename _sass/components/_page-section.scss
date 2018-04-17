@@ -1,48 +1,65 @@
 .c-page-section {
   &:not(:last-child) {
-    margin-bottom: content-modular-scale(7);
+    margin-bottom: content-modular-scale(5);
+    
+    @include media-query($sm-screen) {
+      margin-bottom: content-modular-scale(7);
+    }
   }
 }
 
-  .c-page-section__title,
-  .c-page-section__title--large {
-    @include section-title;
-  }
-
-  .c-page-section__title {
-    font-size: modular-scale(5);
-  }
-
-  .c-page-section__title--large {
-    font-size: modular-scale(6);
-  }
-
-  .c-page-section__content {
-    display: grid;
-    grid-template-columns: 1fr;
+  .c-page-section__inner {
+    font-size: 12px;
 
     @include media-query($sm-screen) {
-      grid-template-columns: minmax(9%, modular-scale(5)) 1fr;
-      grid-column-gap: content-modular-scale(4);
+      font-size: inherit;
     }
   }
 
-    .c-page-section__line {
-      position: relative;
-      display: none;
-      width: inherit;
-      top: modular-scale(-1);
-      height: 4px;
-      background-color: $lt-gray;
+    .c-page-section__title,
+    .c-page-section__title--large {
+      font-size: modular-scale(4);
+      @include section-title;
+    }
+
+    .c-page-section__title {
+      @include media-query($sm-screen) {
+        font-size: modular-scale(5);
+      }
+    }
+
+    .c-page-section__title--large {
+      @include media-query($sm-screen) {
+        font-size: modular-scale(6);
+      }
+    }
+
+    .c-page-section__content {
+      display: grid;
+      grid-template-columns: 1fr;
 
       @include media-query($sm-screen) {
-        display: inline-block;
+        grid-template-columns: minmax(9%, modular-scale(5)) 1fr;
+        grid-column-gap: content-modular-scale(4);
       }
     }
 
-    .c-page-section__blurb {
-      .blurb__text {
-        font-size: modular-scale(2);
-        max-width: modular-scale(11);
+      .c-page-section__line {
+        position: relative;
+        display: none;
+        width: inherit;
+        top: modular-scale(-1);
+        height: 4px;
+        background-color: $lt-gray;
+
+        @include media-query($sm-screen) {
+          display: inline-block;
+        }
       }
-    }
+
+      .c-page-section__blurb {
+        .blurb__text {
+          font-size: modular-scale(2);
+          max-width: modular-scale(11);
+        }
+      }
