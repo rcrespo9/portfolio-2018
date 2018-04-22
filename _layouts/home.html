@@ -2,6 +2,16 @@
 layout: default 
 ---
 
-{%- include currently.html -%}
-{%- include selected-projects.html -%}
-{%- include contact.html -%}
+{%- include page-section.html title='Currently' blurb='Web developer at
+<a href="https://montclair.edu" target="_blank" rel="noopener nofollow">Montclair State University</a>. Pursuing an MS in Computer Science degree at DePaul University.' -%}
+
+{%- include page-section.html title='Selected Work' projects=site.data.projects -%}
+
+{% capture contact_info %}
+  <a href="mailto:{{ site.email }}">Email me</a>, peruse my
+  <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}" target="_blank" rel="noopener nofollow">GitHub</a>, check out my
+  <a href="https://codepen.io/{{ site.codepen_username| cgi_escape | escape }}" target="_blank" rel="noopener nofollow">CodePen</a> or connect with me on
+  <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" target="_blank" rel="noopener nofollow">LinkedIn</a>.
+{% endcapture %}
+
+{%- include page-section.html title='Contact' blurb=contact_info -%}

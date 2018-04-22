@@ -1,38 +1,30 @@
-<section class="c-page-section">
-  <div class="l-wrap">
-    <div class="c-page-section__inner">
-      <h2 class="c-page-section__title">Selected Projects</h2>
-    </div>
-
-    <ul class="c-projects">
-      {% for project in site.data.projects %}
-        <li class="c-project">
-          <article class="c-project__inner">
-            <header class="c-project__header">
-              <h3 class="c-project__title">
-                <a href="{{ project.url }}" target="_blank">{{ project.name}}</a>
-              </h3>
-              <p class="c-project__description">{{ project.description }}</p>
-            </header>
-            <dl class="c-project__attributes">
-              <span class="attribute">
-                <dt class="attribute__name">Year</dt>
-                <dd class="attribute__val">{{ project.year }}</dd>
-              </span>
-        
-              <span class="attribute">
-                <dt class="attribute__name">Role</dt>
-                <dd class="attribute__val">{{ project.role }}</dd>
-              </span>
-        
-              <span class="attribute">
-                <dt class="attribute__name">Context</dt>
-                <dd class="attribute__val">{{ project.context }}</dd>
-              </span>
-            </dl>
-          </article>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</section>
+<ul class="c-projects">
+  {% for project in include.projects %}
+    <li class="c-project">
+      <article class="c-project__inner">
+        <header class="c-project__header">
+          <h3 class="c-project__title">
+            <a href="{{ project.url }}" target="_blank">{{ project.name}}</a>
+          </h3>
+          <p class="c-project__description">{{ project.description }}</p>
+        </header>
+        <dl class="c-project__attributes">
+          <span class="attribute">
+            <dt class="attribute__name">Year</dt>
+            <dd class="attribute__val">{{ project.year }}</dd>
+          </span>
+    
+          <span class="attribute">
+            <dt class="attribute__name">Role</dt>
+            <dd class="attribute__val">{{ project.role }}</dd>
+          </span>
+    
+          <span class="attribute">
+            <dt class="attribute__name">Context</dt>
+            <dd class="attribute__val">{{ project.context }}</dd>
+          </span>
+        </dl>
+      </article>
+    </li>
+  {% endfor %}
+</ul>
