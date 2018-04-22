@@ -18,29 +18,17 @@ a {
   color: inherit;
   text-decoration: none;
 
-  &:before,
   &:after {
     content: "";
     display: block;
     width: 100%;
     height: 1px;
+    background-color: rgba($white, .3);
+    transition: background-color .25s ease-in-out;
     @include position(absolute, null 0 0 0);
   }
-
-  &:before {
-    z-index: 1;
-    width: 0;
-    background-color: $white;
-    will-change: width;
-    transition: width 1s ease-in-out;
-  }
-
-  &:after {
-    z-index: 0;
-    background-color: rgba($white, .25);
-  }
   
-  &:hover:before {
-    width: 100%;
+  &:hover:after {
+    background-color: rgba($white, 1);
   }
 }
