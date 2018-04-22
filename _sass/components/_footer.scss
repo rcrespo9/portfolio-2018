@@ -1,0 +1,9 @@
+.c-footer__inner {
+  padding: modular-scale(2) 0;
+}
+
+.c-footer__copy {
+  font-size: modular-scale(0);
+  color: $md-gray;
+  @include sans-serif-text;
+}

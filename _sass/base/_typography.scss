@@ -8,12 +8,6 @@ dd {
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  line-height: 1;
-}
-
 ul {
   padding: 0;
   list-style: none;
@@ -24,19 +18,29 @@ a {
   color: inherit;
   text-decoration: none;
 
+  &:before,
   &:after {
     content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
     display: block;
     width: 100%;
     height: 1px;
+    @include position(absolute, null 0 0 0);
+  }
+
+  &:before {
+    z-index: 1;
+    width: 0;
+    background-color: $white;
+    will-change: width;
+    transition: width 1s ease-in-out;
+  }
+
+  &:after {
+    z-index: 0;
     background-color: rgba($white, .25);
-    transition: background-color .25s ease-in-out;
   }
   
-  &:hover:after {
-    background-color: rgba($white, 1);
+  &:hover:before {
+    width: 100%;
   }
 }

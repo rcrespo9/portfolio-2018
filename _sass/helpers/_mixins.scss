@@ -1,11 +1,17 @@
-@mixin section-title {
-  margin-bottom: modular-scale(-2);
-  font-weight: map-get($font-weight, book);
+@mixin serif-text {
+  font-weight: map-get($font-weight, regular);
 }
 
-@mixin small-text {
+@mixin sans-serif-text {
   font-family: $sans-serif-font;
-  font-size: modular-scale(0);
+  font-weight: map-get($font-weight, regular);
+  font-feature-settings: "pnum";
+}
+
+@mixin base-sans-serif-text {
+  font-size: modular-scale(0, 1.125rem);
+
+  @include sans-serif-text();
 }
 
 @mixin media-query($width) {

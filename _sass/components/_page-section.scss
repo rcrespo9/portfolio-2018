@@ -1,0 +1,11 @@
+.c-page-section__title {
+  margin-bottom: modular-scale(4);
+  color: $md-gray;
+  font-size: modular-scale(1);
+  @include sans-serif-text;
+}
+
+.c-page-section__blurb {
+  max-width: modular-scale(14);
+  font-size: modular-scale(3);
+}
