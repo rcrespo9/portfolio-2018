@@ -1,6 +1,5 @@
 @mixin section-title {
   margin-bottom: modular-scale(-2);
-  color: $navy-blue;
   font-weight: map-get($font-weight, book);
 }
 
