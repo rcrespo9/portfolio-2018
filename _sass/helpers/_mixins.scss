@@ -10,8 +10,13 @@
 
 @mixin base-sans-serif-text {
   font-size: modular-scale(0, 1.125rem);
-
+  line-height: strip-unit( modular-scale(1, 1.125));
   @include sans-serif-text();
+}
+
+@mixin global-border($side) {
+  border-#{$side}: 1px solid;
+  border-color: $border-color;
 }
 
 @mixin media-query($width) {

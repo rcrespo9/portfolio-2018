@@ -1,0 +1,36 @@
+.c-project__inner {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  grid-column-gap: percentage(1 / 12);
+}
+
+  .c-project {
+    padding: modular-scale(2) 0;
+    @include global-border(bottom);
+
+    &:first-child {
+      @include global-border(top);
+    }
+  }
+
+    .c-project__title {
+      margin-bottom: modular-scale(-1);
+      font-size: modular-scale(2);
+      @include serif-text;
+    }
+
+    .c-project__description {
+      color: $lt-gray;
+      @include base-sans-serif-text;
+    }
+
+    .c-project__attributes {
+      display: flex;
+      align-items: center;
+
+      .attributes__item {
+        // max-width: modular-scale(9);
+        color: $md-gray;
+        @include base-sans-serif-text;
+      }
+    }

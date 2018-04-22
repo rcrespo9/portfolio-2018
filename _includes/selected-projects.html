@@ -8,22 +8,15 @@
           </h3>
           <p class="c-project__description">{{ project.description }}</p>
         </header>
-        <dl class="c-project__attributes">
-          <span class="attribute">
-            <dt class="attribute__name">Year</dt>
-            <dd class="attribute__val">{{ project.year }}</dd>
-          </span>
-    
-          <span class="attribute">
-            <dt class="attribute__name">Role</dt>
-            <dd class="attribute__val">{{ project.role }}</dd>
-          </span>
-    
-          <span class="attribute">
-            <dt class="attribute__name">Context</dt>
-            <dd class="attribute__val">{{ project.context }}</dd>
-          </span>
-        </dl>
+        <ul class="c-project__attributes">
+          <li class="attributes__item">{{ project.context }}</li>
+          <li class="attributes__item"> {{ project.role }} </li>
+          <li class="attributes__item"> {{ project.technologies }}</li>
+          <li class="attributes__item">{{ project.year }}</li>
+          <li class="attributes__item">
+            <a href="{{ project.github_url }}" target="_blank">View Code<span class="o-sr-only-text"> for {{ project.name }}</span></a>
+          </li>
+        </ul>
       </article>
     </li>
   {% endfor %}
