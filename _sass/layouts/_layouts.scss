@@ -7,11 +7,3 @@
 .l-page-section:not(:last-of-type) {
   margin-bottom: modular-scale(7);
 }
-
-.g-1 {
-  grid-column: span 1;
-}
-
-.g-2 {
-  grid-column: span 2;
-}
