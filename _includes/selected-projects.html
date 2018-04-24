@@ -12,7 +12,9 @@
           <li class="attributes__item">{{ project.context }}</li>
           <li class="attributes__item"> {{ project.role }} </li>
           <li class="attributes__item"> {{ project.technologies }}</li>
-          <li class="attributes__item">{{ project.year }}</li>
+          <li class="attributes__item">
+            <time>{{ project.year }}</time>
+          </li>
           <li class="attributes__item">
             <a href="{{ project.github_url }}" target="_blank">View Code<span class="o-sr-only-text"> for {{ project.name }}</span></a>
           </li>

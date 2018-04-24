@@ -2,6 +2,7 @@
   display: grid;
   grid-template-columns: modular-scale(11, 1%) 1fr;
   grid-column-gap: percentage(1 / 12);
+  align-items: center;
 }
 
   .c-project {
@@ -28,7 +29,6 @@
       display: grid;
       grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
       grid-column-gap: modular-scale(2);
-      align-items: center;
 
       .attributes__item {
         // max-width: modular-scale(9);

@@ -3,7 +3,7 @@
   description: One page website for a lingerie store in the Dominican Republic
   year: 2017
   role: Design, Development
-  technologies: HTML5, SCSS, Javascript
+  technologies: HTML5, SCSS, jQuery
   context: Freelance
   github_url: https://github.com/rcrespo9/amorosa
 
@@ -12,6 +12,6 @@
   description: Detects what country you're in, and zooms in on it on a map
   year: 2017
   role: Design, Development
-  technologies: HTML5, SCSS, Javascript
+  technologies: HTML5, SCSS, Vanilla JS, ipstack API
   context: Personal
   github_url: https://github.com/rcrespo9/where-are-you
