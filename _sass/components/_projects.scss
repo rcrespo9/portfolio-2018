@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: modular-scale(11, 1%) 1fr;
   grid-column-gap: percentage(1 / 12);
-  align-items: center;
+  align-items: baseline;
 }
 
   .c-project {
