@@ -27,11 +27,10 @@
 
     .c-project__attributes {
       display: grid;
-      grid-template-columns: 1fr 2fr 2fr 1fr 1fr;
+      grid-template-columns: 2fr 2fr 3fr 1fr 2fr;
       grid-column-gap: modular-scale(2);
 
       .attributes__item {
-        // max-width: modular-scale(9);
         color: $md-gray;
         @include base-sans-serif-text;
 
