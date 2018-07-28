@@ -3,7 +3,11 @@
 }
 
 .c-footer__copy {
-  font-size: em(0);
+  font-size: modular-scale(0, 1.125em);
   color: $md-gray;
   @include sans-serif-text;
+
+  @include media-query($sm-screen) {
+    font-size: em(0);
+  }
 }

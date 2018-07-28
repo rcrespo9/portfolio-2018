@@ -1,10 +1,23 @@
-.c-page-section__title {
-  margin-bottom: em(3);
-  color: $md-gray;
-  font-size: em(1);
-  @include sans-serif-text;
+.c-page-section__inner {
+  font-size: modular-scale(-1);
+  
+  @include media-query($sm-screen) {
+    font-size: inherit;
+  }
 }
 
-.c-page-section__blurb {
-  font-size: em(4);
-}
+  .c-page-section__title {
+    margin-bottom: em(2);
+    color: $md-gray;
+    font-size: em(2);
+    @include sans-serif-text;
+
+    @include media-query($sm-screen) {
+      font-size: em(1);
+      margin-bottom: em(3);
+    }
+  }
+
+  .c-page-section__blurb {
+    font-size: em(4);
+  }

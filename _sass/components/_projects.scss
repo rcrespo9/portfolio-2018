@@ -1,45 +1,84 @@
-.c-project__inner {
-  display: grid;
-  grid-template-columns: modular-scale(11, 1%) 1fr;
-  grid-column-gap: percentage(1 / 12);
-  align-items: baseline;
+.c-projects {
+  font-size: modular-scale(1);
+
+  @include media-query($sm-screen) {
+    font-size: inherit;
+  }
 }
 
-  .c-project {
-    padding: modular-scale(2) 0;
-    @include global-border(bottom);
-
-    &:first-child {
-      @include global-border(top);
+  .c-project__inner {
+    @include media-query($sm-screen) {
+      display: grid;
+      grid-template-columns: modular-scale(11, 1%) 1fr;
+      grid-column-gap: percentage(1 / 12);
+      align-items: baseline;
     }
   }
 
-    .c-project__title {
-      margin-bottom: em(-2);
-      font-size: em(2);
-      @include serif-text;
-    }
+    .c-project {
+      padding: em(2) 0;
+      @include global-border(bottom);
 
-    .c-project__description {
-      color: $lt-gray;
-      @include base-sans-serif-text;
-    }
-
-    .c-project__attributes {
-      display: grid;
-      grid-template-columns: 2fr 2fr 3fr 1fr 2fr;
-      grid-column-gap: modular-scale(2);
-
-      .attributes__item {
-        color: $md-gray;
-        @include base-sans-serif-text;
-
-        &:last-child {
-          text-align: right;
-        }
-
-        &:nth-last-child(2) {
-          text-align: center;
-        }
+      &:first-child {
+        @include global-border(top);
       }
     }
+
+      .c-project__header {
+        margin-bottom: em(1);
+
+        @include media-query($sm-screen) {
+          margin-bottom: 0;
+        }
+      }
+
+        .c-project__title {
+          margin-bottom: em(-3);
+          font-size: em(2);
+          @include serif-text;
+        }
+
+        .c-project__description {
+          color: $lt-gray;
+          @include base-sans-serif-text;
+        }
+
+      .c-project__description,
+      .attributes__item {
+        max-width: em(12);
+      }
+
+      .c-project__attributes {
+        @include media-query($sm-screen) {
+          display: grid;
+          grid-template-columns: 2fr 2fr 3fr 1fr 2fr;
+          grid-column-gap: modular-scale(2);
+        }
+
+        .attributes__item {
+          color: $md-gray;
+          @include base-sans-serif-text;
+
+          &:not(:nth-last-child(-n+2)) {
+            margin-bottom: em(-5);
+          }
+
+          @include media-query($sm-screen) {
+            max-width: auto;
+            margin-bottom: 0;
+
+            &:nth-last-child(2) {
+              text-align: center;
+            }
+          }
+        }
+
+        .attributes__item--code {
+          margin-top: em(0);
+
+          @include media-query($sm-screen) {
+            margin-top: 0;
+            text-align: right;
+          }
+        }
+      }

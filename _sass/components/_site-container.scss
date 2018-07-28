@@ -1,9 +1,19 @@
 .c-site-container {
   max-width: modular-scale(15);
   margin: 0 auto;
-  padding-top: modular-scale(8);
+  padding-top: modular-scale(7);
 
   main {
-    margin-bottom: modular-scale(7);
+    margin-bottom: modular-scale(6);
+  }
+
+  @include media-query($sm-screen) {
+    .c-site-container {
+      padding-top: modular-scale(8);
+    }
+
+    main {
+      margin-bottom: modular-scale(7);
+    }
   }
 }
