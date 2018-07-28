@@ -9,8 +9,8 @@
 }
 
 @mixin base-sans-serif-text {
-  font-size: modular-scale(0, 1.125rem);
-  line-height: strip-unit( modular-scale(1, 1.125));
+  font-size: modular-scale(0, 1.125em);
+  line-height: strip-unit( modular-scale(1, 1.125) );
   @include sans-serif-text();
 }
 

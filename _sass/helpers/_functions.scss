@@ -1,3 +1,7 @@
 @function content-modular-scale($value) {
   @return modular-scale($value, 1rem);
 }
+
+@function em($value) {
+  @return modular-scale($value, 1em);
+}

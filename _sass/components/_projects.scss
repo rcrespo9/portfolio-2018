@@ -15,8 +15,8 @@
   }
 
     .c-project__title {
-      margin-bottom: modular-scale(-1);
-      font-size: modular-scale(2);
+      margin-bottom: em(-2);
+      font-size: em(2);
       @include serif-text;
     }
 

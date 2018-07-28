@@ -3,7 +3,7 @@
 }
 
 .c-footer__copy {
-  font-size: modular-scale(0);
+  font-size: em(0);
   color: $md-gray;
   @include sans-serif-text;
 }
