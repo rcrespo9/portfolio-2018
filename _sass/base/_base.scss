@@ -26,3 +26,13 @@ body {
   background-color: $black;
   color: $white;
 }
+
+::selection {
+  background: $highlight-bg;
+  color: $white;
+}
+
+::-moz-selection {
+  background: $highlight-bg;
+  color: $white;
+}
