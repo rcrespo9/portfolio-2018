@@ -15,8 +15,13 @@
           <li class="attributes__item">
             <time>{{ project.year }}</time>
           </li>
-          <li class="attributes__item attributes__item--code">
+          <li class="attributes__item attributes__item--link">
+            {% if project.github_url %}
             <a href="{{ project.github_url }}" target="_blank">View Code<span class="o-sr-only-text"> for {{ project.name }}</span></a>
+            {% else %}
+            <a href="{{ project.url }}" target="_blank">View Site<span class="o-sr-only-text"> for {{ project.name }}</span>
+            </a>
+            {% endif %}
           </li>
         </ul>
       </article>

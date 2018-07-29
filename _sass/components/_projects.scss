@@ -73,7 +73,7 @@
           }
         }
 
-        .attributes__item--code {
+        .attributes__item--link {
           margin-top: em(0);
 
           @include media-query($sm-screen) {

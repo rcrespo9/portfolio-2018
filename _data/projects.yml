@@ -3,15 +3,15 @@
   description: One page website for a lingerie store in the Dominican Republic
   year: 2017
   role: Design, Development
-  technologies: HTML5, SCSS, jQuery
+  technologies: jQuery
   context: Freelance
   github_url: https://github.com/rcrespo9/amorosa
 
 - name: Where Are You?
   url: http://rcrespo9.github.io/where-are-you/
-  description: Detects what country you're in, and zooms in on it on a map
+  description: Detects what country you're in and zooms in on it on a world map
   year: 2017
   role: Design, Development
-  technologies: HTML5, SCSS, Vanilla JS, ipstack API
+  technologies: Vanilla JS, ipstack API
   context: Personal
   github_url: https://github.com/rcrespo9/where-are-you
