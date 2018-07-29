@@ -21,6 +21,6 @@ a {
   @include global-border(bottom);
 
   &:hover {
-    border-color: $white;
+    border-color: $lt-gray;
   }
 }

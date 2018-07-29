@@ -56,7 +56,7 @@
         }
 
         .attributes__item {
-          color: $md-gray;
+          color: $gray;
           @include base-sans-serif-text;
 
           &:not(:nth-last-child(-n+2)) {
