@@ -63,9 +63,21 @@
             margin-bottom: em(-5);
           }
 
+          &:not(:last-child):before {
+            content: attr(data-description) ":";
+            margin-right: em(-4);
+            display: inline;
+            color: $md-gray;
+          }
+
           @include media-query($sm-screen) {
             max-width: auto;
             margin-bottom: 0;
+
+            &:not(:last-child):before {
+              content: '';
+              display: none;
+            }
 
             &:nth-last-child(2) {
               text-align: center;

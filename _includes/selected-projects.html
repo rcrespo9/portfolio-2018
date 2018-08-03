@@ -9,12 +9,10 @@
           <p class="c-project__description">{{ project.description }}</p>
         </header>
         <ul class="c-project__attributes">
-          <li class="attributes__item">{{ project.context }}</li>
-          <li class="attributes__item">{{ project.role }} </li>
-          <li class="attributes__item">{{ project.technologies }}</li>
-          <li class="attributes__item">
-            <time>{{ project.year }}</time>
-          </li>
+          <li class="attributes__item" data-description="Context">{{ project.context }}</li>
+          <li class="attributes__item" data-description="Role">{{ project.role }} </li>
+          <li class="attributes__item" data-description="Technologies">{{ project.technologies }}</li>
+          <li class="attributes__item" data-description="Year"><time>{{ project.year }}</time></li>
           <li class="attributes__item attributes__item--link">
             {% if project.github_url %}
             <a href="{{ project.github_url }}" target="_blank">View Code<span class="o-sr-only-text"> for {{ project.name }}</span></a>
