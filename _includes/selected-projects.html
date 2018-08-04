@@ -1,5 +1,5 @@
 <ul class="c-projects">
-  {% assign items = include.projects | sort: 'year' %}
+  {% assign items = include.projects | sort: 'year' | reverse %}
   {% for project in items %}
     <li class="c-project">
       <article class="c-project__inner">
