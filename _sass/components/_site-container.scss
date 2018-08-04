@@ -1,14 +1,14 @@
 .c-site-container {
   max-width: modular-scale(15);
   margin: 0 auto;
-  padding-top: modular-scale(6);
+  padding-top: modular-scale(7);
 
   main {
     margin-bottom: modular-scale(6);
   }
 
   @include media-query($sm-screen) {
-    padding-top: modular-scale(7);
+    padding-top: modular-scale(8);
 
     main {
       margin-bottom: modular-scale(7);
