@@ -5,14 +5,18 @@
 
 <body>
 
-  <div class="c-site-container">
-    {%- include header.html -%}
+  <div class="{% if page.url == '/404.html' %} c-page-not-found {% else %} c-site-container {% endif %}">
+    {% if page.url == "/" %}
+      {%- include header.html -%}
+    {% endif %}
 
     <main>
       {{ content }}
     </main>
 
-    {%- include footer.html -%}
+    {% if page.url == "/" %}
+      {%- include footer.html -%}
+    {% endif %}
   </div>
 
 </body>
