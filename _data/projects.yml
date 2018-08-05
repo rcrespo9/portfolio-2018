@@ -12,6 +12,6 @@
   description: Detects what country you're in and zooms in on it on a world map
   year: 2017
   role: Design, Development
-  technologies: Vanilla JS, ipstack API
+  technologies: Vanilla JS, GeoIp API
   context: Personal
   github_url: https://github.com/rcrespo9/where-are-you
