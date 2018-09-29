@@ -1,17 +1,26 @@
-- name: Amorosa Lingerie
-  url: http://amorosalingerie.com
-  description: One page website for a lingerie store in the Dominican Republic
+- name: Digital Clock
+  url: https://rcrespo9.github.io/digital-clock/
+  description: Digital clock equipped with an alarm.
   year: 2017
   role: Design, Development
-  technologies: jQuery
-  context: Freelance
-  github_url: https://github.com/rcrespo9/amorosa
+  technologies: Vanilla JS, Moment.js
+  context: Personal
+  github_url: https://github.com/rcrespo9/digital-clock
 
 - name: Where Are You?
   url: http://rcrespo9.github.io/where-are-you/
-  description: Detects what country you're in and zooms in on it on a world map
+  description: Ever wondered where in the world you are? This little app will tell you (assuming you haven't disabled geolocation).
   year: 2017
   role: Design, Development
   technologies: Vanilla JS, GeoIp API
   context: Personal
   github_url: https://github.com/rcrespo9/where-are-you
+
+- name: Random Quotes
+  url: https://rcrespo9.github.io/random-quotes
+  description: Random quote generator built with a focus on typography and accessibility.
+  year: 2017
+  role: Design, Development
+  technologies: Vue.js, Forismatic API
+  context: Personal
+  github_url: https://github.com/rcrespo9/random-quotes
