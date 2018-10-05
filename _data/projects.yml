@@ -24,3 +24,12 @@
   technologies: Vue.js, Forismatic API
   context: Personal
   github_url: https://github.com/rcrespo9/random-quotes
+
+- name: Boom Bap Memory Game
+  url: https://boom-bap-memory-game.netlify.com/
+  description: Hip hop themed memory card game.
+  year: 2018
+  role: Design, Development
+  technologies: Vue.js
+  context: Personal
+  github_url: https://github.com/rcrespo9/hip-hop-memory-card-game
