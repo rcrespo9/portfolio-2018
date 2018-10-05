@@ -27,7 +27,7 @@
 
 - name: Boom Bap Memory Game
   url: https://boom-bap-memory-game.netlify.com/
-  description: Hip hop themed memory card game.
+  description: Hip-hop themed memory game.
   year: 2018
   role: Design, Development
   technologies: Vue.js
