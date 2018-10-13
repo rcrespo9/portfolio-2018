@@ -25,15 +25,6 @@
   context: Personal
   github_url: https://github.com/rcrespo9/random-quotes
 
-- name: Boom Bap Memory Game
-  url: https://boom-bap-memory-game.netlify.com/
-  description: Hip-hop themed memory game.
-  year: 2018
-  role: Design, Development
-  technologies: Vue.js
-  context: Personal
-  github_url: https://github.com/rcrespo9/hip-hop-memory-card-game
-
 - name: USD to DOP Currency Exchange
   url: https://usd-to-dop.netlify.com/
   description: US Dollar to Dominican Peso currency exchange.
@@ -42,3 +33,12 @@
   technologies: Vue.js
   context: Personal
   github_url: https://github.com/rcrespo9/usd-dop-converter
+
+- name: Boom Bap Memory Game
+  url: https://boom-bap-memory-game.netlify.com/
+  description: Hip-hop themed memory game.
+  year: 2018
+  role: Design, Development
+  technologies: Vue.js
+  context: Personal
+  github_url: https://github.com/rcrespo9/hip-hop-memory-card-game
