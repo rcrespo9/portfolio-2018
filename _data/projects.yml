@@ -12,7 +12,7 @@
   description: Ever wondered where in the world you are? This little app will tell you (assuming you haven't disabled geolocation).
   year: 2017
   role: Design, Development
-  technologies: Vanilla JS, GeoIp API
+  technologies: Vanilla JS, ipapi API, GSAP
   context: Personal
   github_url: https://github.com/rcrespo9/where-are-you
 
