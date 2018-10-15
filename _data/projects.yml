@@ -9,21 +9,12 @@
 
 - name: Where Are You?
   url: http://rcrespo9.github.io/where-are-you/
-  description: Ever wondered where in the world you are? This little app will tell you (assuming you haven't disabled geolocation).
+  description: Ever wondered where in the world you are? This little app will tell you.
   year: 2017
   role: Design, Development
   technologies: Vanilla JS, ipapi API, GSAP
   context: Personal
   github_url: https://github.com/rcrespo9/where-are-you
-
-- name: Random Quotes
-  url: https://rcrespo9.github.io/random-quotes
-  description: Random quote generator built with a focus on typography and accessibility.
-  year: 2017
-  role: Design, Development
-  technologies: Vue.js, Forismatic API
-  context: Personal
-  github_url: https://github.com/rcrespo9/random-quotes
 
 - name: USD to DOP Currency Exchange
   url: https://usd-to-dop.netlify.com/
