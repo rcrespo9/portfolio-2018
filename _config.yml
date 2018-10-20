@@ -13,10 +13,10 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Rudy Crespo — Full Stack Developer
+title: Rudy Crespo — Front-End Developer
 email: hello@rudycrespo.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Rudy Crespo is a New York-based full stack developer with a focus on accessibility and front-end technologies.
+  Rudy Crespo is a New York-based front-end developer dedicated to crafting elegant, accessible and performant web experiences.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://rudycrespo.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  rcrespo9
