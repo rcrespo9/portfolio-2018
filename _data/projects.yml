@@ -1,3 +1,20 @@
+- name: <em>Montclair</em> Magazine
+  url: https://www.montclair.edu/magazine/
+  description: WordPress theme for the <em>Montclair</em> magazine.
+  year: 2016
+  role: Design, Development
+  technologies: WordPress
+  context: Professional
+
+- name: Nasry Michelin Foundation
+  url: https://nasrymichelenfoundation.org/
+  description: WordPress theme for the Nasry Michelin Foundation.
+  year: 2018
+  role: Design, Development
+  technologies: WordPress
+  context: Freelance
+  github_url: https://github.com/rcrespo9/nasry-michelen-foundation
+
 - name: Boom Bap Memory Game
   url: https://boom-bap-memory-game.netlify.com/
   description: Hip-hop themed memory game.
@@ -6,3 +23,19 @@
   technologies: Vue.js
   context: Personal
   github_url: https://github.com/rcrespo9/hip-hop-memory-card-game
+
+- name: Employee Directory
+  url: https://www.montclair.edu/employee-directory
+  description: Built an API and a single page application for Montclair State University's employee directory
+  year: 2019
+  role: Development
+  technologies: Vue.js, PHP
+  context: Professional
+
+- name: Policies and Procedures
+  url: https://www.montclair.edu/policies/
+  description: Built a new home for Montclair State University's policies and procedures using the WordPress API, custom post types and Vue.js
+  year: 2019
+  role: Development
+  technologies: WordPress, Vue.js
+  context: Professional
