@@ -7,21 +7,22 @@
   context: Personal
   github_url: https://github.com/rcrespo9/hip-hop-memory-card-game
 
-- name: Policies and Procedures
-  url: https://www.montclair.edu/policies/
-  description: Built a new home for Montclair State University's policies and procedures using the WordPress API, custom post types and Vue.js.
-  year: 2019
-  role: Development
-  technologies: WordPress, Vue.js
-  context: Professional
-
 - name: Should I Buy This?
   url: https://should-i-buy-this.netlify.com
   description: Decision support tool to help you think through your purchases before you buy.
   year: 2019
-  role: Development
+  role: Design, Development
   technologies: React.js
   context: Personal
   github_url: https://github.com/rcrespo9/should-i-buy
+
+- name: Drug Mentions
+  url: https://drug-mentions.netlify.com/
+  description: Scan music lyrics for possible drug references.
+  year: 2019
+  role: Design, Development
+  technologies: React.js, Express, Typescript, Genius API
+  context: Personal
+  github_url: https://github.com/rcrespo9/drug-mentions
 
 
